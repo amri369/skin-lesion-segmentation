@@ -5,7 +5,8 @@ from torch import nn
 from torch import optim
 from torch.utils.tensorboard import SummaryWriter
 from dataset.dataset_seg import Dataset
-import augmentation.transforms as transform
+from torchvision import transforms
+from augmentation import autoaugment
 from model.iternet.iternet_model import Iternet
 from model.r2u_unet.model import R2AttU_Net
 from trainer.trainer import Trainer
